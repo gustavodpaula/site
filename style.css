@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Rubik';
+    margin: 0px;
+    background-color: #a5dbf16c;
+}
+
+p{
+    font-size: 18px;
+    line-height: 2em;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #0839a3;
+}
+
+nav.principal{
+    background-color: rgba(162, 162, 162, 0.336);
+    padding: 3px;
+    font-weight: bold;
+    margin: auto;
+}
+
+nav.principal a{
+    color:#3F61A6;
+    margin-left: 2px;
+    border-radius: 5px;
+    padding: 9px;
+    transition-duration: 0.5s;
+}
+
+
+nav.principal a:hover{
+    color: #0839a3;
+    background-color: #4bc3f281;
+    padding: 9px;
+}
+
+header{
+    background-color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+header>p{
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.41);
+    margin: 0px;
+}
+
+a:hover{
+    color: #4BC3F2;
+}
+
+nav#secund{
+    text-align: center;
+    padding: 10px;
+}
+
+main{
+    margin: auto;
+    background-color: white;
+    padding: 7px;
+    min-width: 320px;
+    max-width: 800px;
+}
+
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+li{
+    font-size: 18px;
+}
+
+div.video{
+    padding: 20px;
+    margin: 0px -7px 30px -7px;
+    background-color: #4bc3f2a2;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+h1{
+    padding-left: 2px;
+    font-size: 1.7em;
+    background-image: linear-gradient(to right, #86ddffc0,#a4e3fc8d, white);
+    color:#0839a3;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.image{
+    text-align: center;
+}
+
+.container{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.container p{
+    text-indent: 0px;
+}
+
+section#JUSTIFICATIVAS>div.image{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section#FALE>div.image{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section#CONFIGURAÇÃO > ul {
+    list-style-position: inside;
+}
+
+footer{
+    background-color: rgb(200, 200, 200);
+    padding: 20px 10px 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px -1px 0px 0px rgba(25, 25, 25, 0.595);
+}
+
+footer>img{
+    margin-right: 30px;
+}
+
+footer>h2{
+    margin: 6px;
+    font-size: 17px;
+    text-decoration: underline;
+}
+

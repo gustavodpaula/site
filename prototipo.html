@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/Logo-nuvem.ico" type="image/x-icon">
+    <style>
+        .container>p{
+            margin: 30px;
+            text-align: justify;
+        }
+
+        h2{
+            margin-top: 20px;
+        }
+
+        li{
+            text-align: justify;
+            margin: 20px;
+            line-height: 2em;
+        }
+
+        li>p{
+            font-weight: bold;
+            display: inline;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="principal">
+        <div class="container">
+            <img src="imagens/Logo - nuvem.png" alt="logo Nuvem" height="30px">
+            <a href="index.html" target="_self">Home</a>
+            <a href="prototipo.html" target="_self">Protótipo</a>
+            <a href="grafico.html" target="_self">Gráfico</a>
+            <a href="fconosco.html" target="_self">Fale Conosco</a>
+        </div>
+    </nav>
+    <hr>
+    <header>
+        <p>SISTEMA DE TRATAMENTO E MONITORAMENTO DE ÁGUAS PLUVIAIS PÓS-CAPTAÇÃO</p>
+
+        <img src="imagens/LOGO-300.png" alt="fundo">
+    </header>
+
+    <main>
+        <section id="CONFIGURAÇÃO">
+            <h1>CONFIGURAÇÃO</h1>
+            <h2>O protótipo é composto por:</h2>
+            <ul>
+                <li>
+                    <p>
+                        SISTEMA DE FILTRAÇÃO:
+                    </p> <br>por carvão ativado e manta perlon, capaz de remover impurezas, odor, sabor e cor da água da chuva, tornando-a limpa e segura para o consumo humano;
+                </li>
+                <li>
+                    <p>
+                        SISTEMA DE DESINFECÇÃO:
+                    </p> <br>utilizando <a href="https://educapes.capes.gov.br/bitstream/capes/642946/2/LIVRO%20A%20radia%C3%A7%C3%A3o%20ultravioleta%20na%20desinfec%C3%A7%C3%A3o%20de%20%C3%A1guas%20residuais%20dom%C3%A9sticas.pdf" target="_blank">tecnologia de luz ultravioleta (UV)</a> para inativar microorganismos patogênicos, garantindo a potabilidade da água;
+                </li>
+                <li>
+                    <p>
+                        SISTEMA DE MONITORAMENTO:
+                    </p> <br>monitorando a qualidade da água em tempo real, através de sensores de turbidez e ph.
+                </li>
+            </ul>
+    
+            <div class="image">
+                <picture>
+                    <source media="(max-width: 630px)" srcset="imagens/modelagem-3d-pq.JPG">
+                    <img src="imagens/modelagem-3d-600.JPG" alt="PROTOTIPO">
+                </picture>
+            </div>
+        </section>
+        <section id="COMPONENTES">
+            <h1>PRINCIPAIS COMPONENTES</h1>
+            <div class="container">
+                <img src="imagens/esp32-200.webp" alt="esp32">
+                <h3 style="padding-left: 10px;">
+                    ESP 32
+                </h3>
+                <p>
+                    Microcontrolador utilizado no desenvolvimento do projeto. Responsável por controlar toda lógica do circuito elétrico.
+                </p>
+            </div>
+
+            <div class="container" style="background-color: #4bc3f2a2;">
+                <p style="color: black;">
+                    Mede a resistência da água à passagem de luz. A turbidez é a medida da dificuldade de um feixe de luz atravessar uma certa quantidade de água, conferindo uma aparência turva à mesma.
+                </p>
+                <h3>
+                    SENSOR DE TURBIDEZ
+                </h3>
+                <img src="imagens/sensorturbidez-200-removebg-preview.png" alt="Sensor de Turbidez" height="170px">
+            </div>
+
+            <div class="container">
+                <img src="imagens/sensorph-200.webp" alt="Sensor de PH">
+                <h3 style="padding-left: 10px;">
+                    SENSOR DE PH
+                </h3>
+                <p>
+                    O ph corresponde ao potencial hidrogeniônico de uma solução. Ele é determinado pela concentração de íons de hidrogênio (H+) e serve para medir o grau de acidez, neutralidade ou alcalinidade de determinada solução.
+                </p>
+            </div>
+            <div class="container" style="background-color: #4bc3f2a2;">
+                <p style="color: black;">
+                    Transporte de água de um reservatório para outro.
+                </p>
+                <h3>
+                    MINI BOMBA SUBMERSÍVEL
+                </h3>
+                <img src="imagens/bomba-170.png" alt="Mini Bomba">
+            </div>
+            <div class="container">
+                <img src="imagens/valvula-200.webp" alt="Valvula Solenoide">
+                <h3 style="padding-left: 10px;">
+                    VÁLVULAS SOLENOIDES
+                </h3>
+                <p>
+                    Utilizadas para controlar o fluxo de água.
+                </p>
+            </div>
+            <div class="container" style="background-color: #4bc3f2a2;">
+                <p style="color: black;">
+                    Comumente usados para ligar ou desligar dispositivos.
+                </p>
+                <h3>
+                    MÓDULO RELÉ
+                </h3>
+                <img src="imagens/modulorele-200-removebg-preview.png" alt="Modulo Rele">
+            </div> 
+            <div class="container">
+                <img src="imagens/lcd-20x4-200.png" alt="LCD 20X4">
+                <h3 style="padding-left: 10px;">
+                    LCD 20X4
+                </h3>
+                <p>
+                    Expõe os parâmetros aquáticos (Turbidez e PH) para o usuário.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagens/LOGO-300.png" alt="LOGO-PLUVION">
+        <img src="imagens/logo_feira-100.png" alt="LOGO-FEIRA">
+        <h2>REDES SOCIAIS</h2>
+        <nav>
+            <a href="https://www.instagram.com/projeto_pluvion/?next=%2F" target="_blank"><img src="imagens/icone-insta.webp" alt="instagram"></a>
+            <a href="https://youtu.be/36X_7MOQJOo?si=_drkNOO9qMGQOnbF" target="_blank"><img src="imagens/icone-youtube.png" alt="youtube"></a>
+        </nav>
+    </footer>
+
+</body>
+</html>
